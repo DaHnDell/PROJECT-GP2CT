@@ -16,12 +16,12 @@ public class CommitSummary extends BaseEntity{
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "csno")
-  private Long csno;
+  private Long csno; // commitSummaryNo
 
   @OneToOne
-  @JoinColumn(name = "cno")
+  @JoinColumn(name = "cno") // commitNo
   private Commit cno;
 
-  private String summaryText;
+  private String summary; // summary
 
 }
