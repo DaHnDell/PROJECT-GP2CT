@@ -1,0 +1,7 @@
+openai:
+  api-key: ${OPENAI_API_KEY}
+  model: gpt-3.5-turbo
+  prompt-template: |
+    아래 내용을 요약해 주세요:
+    - 커밋 메시지: {{message}}
+    - 코드 변경사항: {{diff}}

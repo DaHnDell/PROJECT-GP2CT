@@ -1,0 +1,12 @@
+spring:
+    profiles:
+        include:
+            - db
+            - openai
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                format_sql: true
+        show-sql: true
