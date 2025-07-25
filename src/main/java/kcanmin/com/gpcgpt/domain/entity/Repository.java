@@ -11,15 +11,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Repository  extends BaseEntity{
+public class Repository extends BaseEntity{
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "rno")
   private Long rno;
 
-  private String repositoryName;
+  private String rName;
 
-  private String repositoryURL;
+  private String url;
 
 }
