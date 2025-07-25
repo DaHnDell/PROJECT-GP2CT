@@ -16,12 +16,12 @@ public class Commit extends BaseEntity{
 
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "rno")
-  private Repository rno;
+  private Repository rno; // repositoryNo
 
-  private String commitHash;
+  private String hash; // commitHash
 
-  private String commitMessage;
+  private String msg; // commitMessage
 
-  private String authorName;
+  private String author; // commitAuthor
 
 }
